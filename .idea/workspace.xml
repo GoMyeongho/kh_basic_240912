@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/5_정수n을_입력받아n_x_n출력하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/6_n개의_숫자를_입력받아_최대_최소_구하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 문제/4_공백이_있는_문자열_받아서_출력하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/4_공백이_있는_문자열_받아서_출력하기.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +23,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GoMyeongho"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/GoMyeongho/kh_basic_240912.git",
+    "accountId": "f01146f7-6fb7-4295-8df3-c5c9e4e495d9"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -24,6 +45,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2lroBh6ljvnzTwWQwkcQMCbXlbU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,6 +54,8 @@
   "keyToString": {
     "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
+    "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
+    "Python.6_n개의_숫자를_입력받아_최대_최소_구하기.executor": "Run",
     "Python.기본.executor": "Run",
     "Python.문자열 실습문제.executor": "Run",
     "Python.문자열 예제.executor": "Run",
@@ -54,7 +78,9 @@
     "Python.조건문예제.executor": "Run",
     "Python.행사안내메일자동 작성하기.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/dev/git_test/kh_basic",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/dev/python/kh_basic",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>

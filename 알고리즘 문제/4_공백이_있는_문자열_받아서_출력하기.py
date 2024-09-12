@@ -1,4 +1,10 @@
-phrase = input
+from sys import stdin
+
+phrase = stdin.readline().rstrip()
+print(phrase)
+
+
+
 
 
 
