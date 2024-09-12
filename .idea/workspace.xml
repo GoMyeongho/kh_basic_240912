@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2lroBh6ljvnzTwWQwkcQMCbXlbU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
+    "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
+    "Python.기본.executor": "Run",
+    "Python.문자열 실습문제.executor": "Run",
+    "Python.문자열 예제.executor": "Run",
+    "Python.문자의개수.executor": "Run",
+    "Python.반복문실습.executor": "Run",
+    "Python.반복문예제.executor": "Run",
+    "Python.별찍기.executor": "Run",
+    "Python.비밀번호만들기.executor": "Run",
+    "Python.상근이알람.executor": "Run",
+    "Python.아르바이트급여계산.executor": "Run",
+    "Python.연산자 예제.executor": "Run",
+    "Python.연산자예제.executor": "Run",
+    "Python.윤년계산하기.executor": "Run",
+    "Python.입력받은_정수_수에_대한_합계_구하기.executor": "Run",
+    "Python.입력받은문자대소문자변환하기.executor": "Run",
+    "Python.입력예제.executor": "Run",
+    "Python.입출력.executor": "Run",
+    "Python.자료형 예제.executor": "Run",
+    "Python.조건문_응용.executor": "Run",
+    "Python.조건문예제.executor": "Run",
+    "Python.행사안내메일자동 작성하기.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/dev/git_test/kh_basic",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\python\kh_basic\개발_환경_구성_및_기본_문법\수업중_응용문제" />
+      <recent name="D:\dev\python\kh_basic\개발_환경_구성_및_기본_문법" />
+      <recent name="D:\dev\python\kh_basic\알고리즘 문제\수업중" />
+      <recent name="D:\dev\python\kh_basic\알고리즘 문제" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="" />
+      <created>1725947422825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725947422825</updated>
+    </task>
+    <servers />
+  </component>
+</project>
