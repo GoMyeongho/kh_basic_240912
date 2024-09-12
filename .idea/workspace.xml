@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/5_정수n을_입력받아n_x_n출력하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/6_n개의_숫자를_입력받아_최대_최소_구하기.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240912문제풀이">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 문제/4_공백이_있는_문자열_받아서_출력하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/4_공백이_있는_문자열_받아서_출력하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 문제/7_중복값이_없는_로또번호_생성하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/7_중복값이_없는_로또번호_생성하기.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +53,7 @@
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
     "Python.6_n개의_숫자를_입력받아_최대_최소_구하기.executor": "Run",
+    "Python.7_중복값이_없는_로또번호_생성하기.executor": "Run",
     "Python.기본.executor": "Run",
     "Python.문자열 실습문제.executor": "Run",
     "Python.문자열 예제.executor": "Run",
@@ -108,6 +106,27 @@
       <option name="presentableId" value="Default" />
       <updated>1725947422825</updated>
     </task>
+    <task id="LOCAL-00001" summary="240912문제풀이">
+      <option name="closed" value="true" />
+      <created>1726128168877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726128168877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="240912문제풀이">
+      <option name="closed" value="true" />
+      <created>1726128442990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726128442990</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="240912문제풀이" />
+    <option name="LAST_COMMIT_MESSAGE" value="240912문제풀이" />
   </component>
 </project>
