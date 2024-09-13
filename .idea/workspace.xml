@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240912 문제 풀이">
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/build_in_fns.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240913 수업 2교시">
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/10_평균점수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/9_홀짝게임.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/리스트연습.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/상근날드.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/홀짝나누어담기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 문제/7_중복값이_없는_로또번호_생성하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/7_중복값이_없는_로또번호_생성하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/build_in_fns.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/내장함수예제.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/ext_fns.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/외장함수예제1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/ext_fns2.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/외장함수예제2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +50,29 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2lroBh6ljvnzTwWQwkcQMCbXlbU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.10_평균점수.executor": "Run",
     "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
     "Python.6_n개의_숫자를_입력받아_최대_최소_구하기.executor": "Run",
     "Python.7_중복값이_없는_로또번호_생성하기.executor": "Run",
     "Python.8_7개의_숫자를_입력받아_짝수_홀수_나누어_출력.executor": "Run",
+    "Python.9_홀짝게임.executor": "Run",
     "Python.build_in_fns.executor": "Run",
+    "Python.datetime_fns.executor": "Run",
+    "Python.ext_fns.executor": "Run",
+    "Python.ext_fns2.executor": "Run",
     "Python.기본.executor": "Run",
+    "Python.리스트연습.executor": "Run",
     "Python.문자열 실습문제.executor": "Run",
     "Python.문자열 예제.executor": "Run",
     "Python.문자의개수.executor": "Run",
@@ -64,6 +80,7 @@
     "Python.반복문예제.executor": "Run",
     "Python.별찍기.executor": "Run",
     "Python.비밀번호만들기.executor": "Run",
+    "Python.상근날드.executor": "Run",
     "Python.상근이알람.executor": "Run",
     "Python.아르바이트급여계산.executor": "Run",
     "Python.연산자 예제.executor": "Run",
@@ -77,6 +94,7 @@
     "Python.조건문_응용.executor": "Run",
     "Python.조건문예제.executor": "Run",
     "Python.행사안내메일자동 작성하기.executor": "Run",
+    "Python.홀짝나누어담기.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -86,6 +104,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\python\kh_basic\함수_및_자료_처리\응용문제" />
       <recent name="D:\dev\python\kh_basic\개발_환경_구성_및_기본_문법\수업중_응용문제" />
       <recent name="D:\dev\python\kh_basic\개발_환경_구성_및_기본_문법" />
       <recent name="D:\dev\python\kh_basic\알고리즘 문제\수업중" />
@@ -140,12 +159,30 @@
       <option name="project" value="LOCAL" />
       <updated>1726130622082</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="240913 수업 1교시">
+      <option name="closed" value="true" />
+      <created>1726188684861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726188684861</updated>
+    </task>
+    <task id="LOCAL-00006" summary="240913 수업 2교시">
+      <option name="closed" value="true" />
+      <created>1726192345781</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726192345781</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="240912문제풀이" />
     <MESSAGE value="240912 문제 풀이" />
-    <option name="LAST_COMMIT_MESSAGE" value="240912 문제 풀이" />
+    <MESSAGE value="240913 수업 1교시" />
+    <MESSAGE value="240913 수업 2교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240913 수업 2교시" />
   </component>
 </project>
