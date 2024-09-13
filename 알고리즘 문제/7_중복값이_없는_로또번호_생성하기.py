@@ -1,5 +1,5 @@
 import random
-lotto = [0,0,0,0,0,0]
+lotto = []
 i = 0
 while i < 6:
     lotto[i] = random.randrange(1,46)
