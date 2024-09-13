@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240913 수업 3~4교시">
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/12_숫자의합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/13_나머지.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/14_X보다작은수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/딕셔너리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/딕셔너리_커피메뉴.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/핸드폰요금.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240913 수업 5~6교시">
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/15_평균은넘겠지.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/16_저항.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/17_소수의합구하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/딕셔너리_커피메뉴.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/튜플.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 문제/14_X보다작은수.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/14_X보다작은수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/딕셔너리_커피메뉴.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,10 @@
     "Python.11_배수찾기.executor": "Run",
     "Python.12_숫자의합.executor": "Run",
     "Python.13나머지.executor": "Run",
+    "Python.14_X보다작은수.executor": "Run",
+    "Python.15_평균은넘겠지.executor": "Run",
+    "Python.16_저항.executor": "Run",
+    "Python.17_소수의합구하기.executor": "Run",
     "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
@@ -95,6 +100,7 @@
     "Python.자료형 예제.executor": "Run",
     "Python.조건문_응용.executor": "Run",
     "Python.조건문예제.executor": "Run",
+    "Python.튜플.executor": "Run",
     "Python.핸드폰요금.executor": "Run",
     "Python.행사안내메일자동 작성하기.executor": "Run",
     "Python.홀짝나누어담기.executor": "Run",
@@ -194,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726199360638</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="240913 수업 5~6교시">
+      <option name="closed" value="true" />
+      <created>1726210221892</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726210221892</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +217,7 @@
     <MESSAGE value="240913 수업 1교시" />
     <MESSAGE value="240913 수업 2교시" />
     <MESSAGE value="240913 수업 3~4교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240913 수업 3~4교시" />
+    <MESSAGE value="240913 수업 5~6교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240913 수업 5~6교시" />
   </component>
 </project>
