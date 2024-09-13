@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240913 수업 2교시">
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/10_평균점수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/9_홀짝게임.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/리스트연습.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/상근날드.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/홀짝나누어담기.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240913 수업 3~4교시">
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/12_숫자의합.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/13_나머지.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/14_X보다작은수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/딕셔너리.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/딕셔너리_커피메뉴.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/핸드폰요금.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 문제/7_중복값이_없는_로또번호_생성하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/7_중복값이_없는_로또번호_생성하기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/build_in_fns.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/내장함수예제.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/ext_fns.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/외장함수예제1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/ext_fns2.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/외장함수예제2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.10_평균점수.executor": "Run",
+    "Python.11_배수찾기.executor": "Run",
+    "Python.12_숫자의합.executor": "Run",
+    "Python.13나머지.executor": "Run",
     "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
@@ -72,6 +72,8 @@
     "Python.ext_fns.executor": "Run",
     "Python.ext_fns2.executor": "Run",
     "Python.기본.executor": "Run",
+    "Python.딕셔너리.executor": "Run",
+    "Python.딕셔너리_커피메뉴.executor": "Run",
     "Python.리스트연습.executor": "Run",
     "Python.문자열 실습문제.executor": "Run",
     "Python.문자열 예제.executor": "Run",
@@ -93,6 +95,7 @@
     "Python.자료형 예제.executor": "Run",
     "Python.조건문_응용.executor": "Run",
     "Python.조건문예제.executor": "Run",
+    "Python.핸드폰요금.executor": "Run",
     "Python.행사안내메일자동 작성하기.executor": "Run",
     "Python.홀짝나누어담기.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -175,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726192345781</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="240913 수업 3~4교시">
+      <option name="closed" value="true" />
+      <created>1726199350915</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726199350915</updated>
+    </task>
+    <task id="LOCAL-00008" summary="240913 수업 3~4교시">
+      <option name="closed" value="true" />
+      <created>1726199360638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726199360638</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,6 +202,7 @@
     <MESSAGE value="240912 문제 풀이" />
     <MESSAGE value="240913 수업 1교시" />
     <MESSAGE value="240913 수업 2교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240913 수업 2교시" />
+    <MESSAGE value="240913 수업 3~4교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240913 수업 3~4교시" />
   </component>
 </project>
