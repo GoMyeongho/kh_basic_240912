@@ -1,7 +1,7 @@
 import random
-lotto = [0,0,0,0,0,0,0]
+lotto = [0,0,0,0,0,0]
 i = 0
-while i < 7:
+while i < 6:
     lotto[i] = random.randrange(1,46)
     for j in range(i):
         if lotto[i] == lotto[j]:

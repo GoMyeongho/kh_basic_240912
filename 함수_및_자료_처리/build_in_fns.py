@@ -50,11 +50,12 @@ n = list(map(int,input('정수 입력 : ').split()))
 # 평균
 # 해당 리스트(n)를 5로 나눈 몫과 나머지
 
-print(f"입력 받은 값에서 제일 큰 값 : {max(n)} ")
-print(f"입력 받은 값에서 제일 작은 값 : {min(n)} ")
-print(f"총점 : {sum(n)} ")
-print(f"평균 : {sum(n)/len(n)} ")
-print(f"해당 리스트(n)를 5로 나눈 몫과 나머지 : {divmod(sum(n) , 5)} ")
+print(f'''
+입력 받은 값에서 제일 큰 값 : {max(n)} 
+입력 받은 값에서 제일 작은 값 : {min(n)} 
+총점 : {sum(n)} 
+평균 : {sum(n)/len(n)} 
+해당 리스트(n)를 5로 나눈 몫과 나머지 : {divmod(sum(n) , 5)}''')
 
 
 
