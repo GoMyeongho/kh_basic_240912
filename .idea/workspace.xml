@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240913 수업 7~8 교시">
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/18_손익분기점.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/19_수정렬하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/함수기본.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 1 교시">
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/20_성적순.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/21_피타고라스의_법칙.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 문제/17_소수의합구하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/17_소수의합구하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/함수기본.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/함수기본.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
     "Python.17_소수의합구하기.executor": "Run",
     "Python.18_손익분기점.executor": "Run",
     "Python.19_수정렬하기.executor": "Run",
+    "Python.20_성적순.executor": "Run",
     "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
@@ -216,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726217350499</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="240919 수업 1 교시">
+      <option name="closed" value="true" />
+      <created>1726707105418</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726707105418</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,6 +235,7 @@
     <MESSAGE value="240913 수업 3~4교시" />
     <MESSAGE value="240913 수업 5~6교시" />
     <MESSAGE value="240913 수업 7~8 교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240913 수업 7~8 교시" />
+    <MESSAGE value="240919 수업 1 교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240919 수업 1 교시" />
   </component>
 </project>
