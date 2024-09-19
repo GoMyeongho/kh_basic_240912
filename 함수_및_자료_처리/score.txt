@@ -1,0 +1,779 @@
+# 함수
+
+## 함수란?
+
+파이썬에서 **함수(function)**는 코드의 특정 블록을 하나의 이름으로 묶어둔 것입니다. 반복적으로 사용해야 하는 코드나 논리적인 작업을 함수로 정의하면, 코드의 재사용성, 가독성, 유지보수성을 높일 수 있습니다.
+
+함수는 매개변수를 가질 수 있으며, 반환값을 가질 수 있습니다.
+
+<aside>
+👉
+
+여러 개발자가 함께 개발 할때 함수 단위로 구현을 한다면 다른 개발자가 함수의 내부를 몰라도 입력과 출력만 알려 함께 개발을 진행 할 수 있는 장점이 있습니다.
+
+</aside>
+
+- 일반적으로 **식별자뒤에( )소괄호가 있으면 함수**
+- 일반적으로 매개변수와 함수의 호출하는 인자의 갯수는 일치
+- 리턴으로 함수의 결과값을 반환
+- def 라는 키워드를 사용해 정의
+
+![스크린샷 2022-02-16 오전 9.51.44.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/31ee7904-e389-4d6f-9f9f-842a8a4a9c1a/스크린샷_2022-02-16_오전_9.51.44.png)
+
+```python
+def 함수이름(매개변수): # parameter
+	실행할 코드
+	return 변수
+
+함수명(인수)   # argument
+```
+
+### 용어 설명
+
+- 호출 : 함수를 실행하는 행위 입니다. 함수는 호출하지 않으면 실행되지 않는 코드
+- 매개변수(Parameter) : 함수 정의 시 지정한 변수
+- 인자(Argument) : 함수 호출 시 실제로 넘겨주는 값
+- 리턴값 : 함수를 수행하고 결과값을 반환 합니다.
+- 가변 매개변수 함수 :  매개변수를 원하는 만큼 받을 수 있는 함수
+- 기본 매개 변수 : 매개변수에 값을 넣지 않으면 기본값으로 들어 감
+
+## 함수 예제(반복 호출)
+
+- 매개변수는 넘겨 주지만 리턴이 없는 구조
+- 반복적으로 사용되는 부분을 함수로 정의하여 코드의 재사용성을 높임
+
+```python
+def name_card(name, addr, phone) : 
+    print(f"주소 : {addr}")
+    print(f"전화번호 : {phone}")
+    print(f"이름 : {name}")
+    print("-"*30)
+
+name_card("안유진", "서울시 강남구 역삼동", "010-1234-5678")
+name_card("장원영", "서울시 강남구 삼성동", "010-1234-9999")
+name_card("가을", "수원시 권선구 권선동", "010-1234-1111")
+```
+
+## 함수 예제 (계좌 개설)
+
+- 매개변수를 넘겨주고 리턴값을 받는 구조 (balance 변수에 대해 범위 확인)
+
+```python
+# 은행 계좌 개설하기
+def open_account(name):  # 매개변수도 있고, 반환값도 존재하는 함수 선언
+    print(f"{name}님의 계좌를 개설하였습니다.")
+
+def deposit(balance, in_val):  # 잔액과 입금을 매개변수로 전달 받음
+    print(f"{in_val} 입금 되었습니다. 잔액은 {balance + in_val} 입니다.")
+    return balance + in_val   # 기존 잔액에서 입금 금액을 더해서 반환
+
+def withdraw(balance, out_val): # 잔액과 출금을 매개변수로 전달 받음
+    if balance >= out_val:
+        print(f"{out_val}이 출금 되었습니다. 잔액은 {balance - out_val}입니다.")
+        return balance - out_val
+    else:
+        print(f"출금이 실패 했습니다. 잔액은 {balance}입니다.")
+        return balance
+
+balance = 0  # 외부에서 선언한 변수
+name = input("계좌 개설할 이름을 입력 : ")
+open_account(name)   # 인자값으로 전달한 이름을 반환값으로 되돌려 받음
+balance = deposit(balance, 1000)  # 외부에서 선언한 잔액을 인자값으로 전달, 입금액을 인자값으로 전달
+balance = deposit(balance, 1000)
+balance = withdraw(balance, 500)
+print(f"{name}의 잔액은 {balance} 입니다.")
+```
+
+- 클래스 변경 코드 보기
+    
+    ```python
+    class BankAccount:
+        def __init__(self, name):
+            self.name = name
+            self.balance = 0
+            print(f"{self.name}님의 계좌가 개설 되었습니다.")
+    
+        def deposit(self, amount):
+            self.balance += amount
+            print(f"{amount} 입금 되었습니다. 잔액은 {self.balance}입니다.")
+    
+        def withdraw(self, amount):
+            if self.balance >= amount:
+                self.balance -= amount
+                print(f"출금 되었습니다. 잔액은 {self.balance}입니다.")
+            else:
+                print(f"출금이 실패 했습니다. 잔액은 {self.balance}입니다.")
+    
+    # 사용 예
+    account = BankAccount("정경수")
+    account.deposit(1000)
+    account.withdraw(500)
+    print(f"{account.name}의 잔액은 {account.balance}입니다.")
+    ```
+    
+
+## 순차 검색
+
+- 함수 호출 구조로 순차검색 만들기
+- 시간의 복잡도가 O(n)
+
+```python
+# 순차 검색과 이진 검색
+### Python 순차 검색 횟수
+def search_list(a, x):
+    for i in range(0, len(a)):
+        if x == a[i]: return i
+    return -1
+
+v = [17, 92, 18, 33, 58, 7, 33, 42]
+print(search_list(v, 33))
+print(search_list(v, 18))
+print(search_list(v, 900))
+```
+
+## 기본값 인자
+
+- 함수 선언 시 매개 변수에 대한 기본값을 정의
+- 매개변수에 기본값이 정의 되어 있는 경우 함수 호출 시 인자값을 넣지 않으면 기본값으로 호출
+
+```python
+def profile(name, year = 2, age = 18, school = "태양고"):
+    print(f"이름 : {name}, 학교 : {school}, 학번 : {year}, 나이 : {age}")
+
+profile("나희도")
+profile("고유림")
+profile("백이진", None, 22)
+```
+
+## 가변 매개변수
+
+- 함수의 매개변수 앞에 *(별표)를 붙여주면 함수의 매개 변수를 몇개를 입력하든 함수 내에서 튜플로 인식
+
+```python
+def profile(name, age, *lang) :
+    print(f"이름 : {name}, 나이 : {age}", end= " ")
+    for e in lang : 
+        print(e, end= " ")
+    print()
+
+profile("나희도", 18, "Python", "Java", "C", "C++", "React", "Kotlin")
+profile("조세호", 38, "Python", "Java", )
+profile("유재석", 48, "Python", "Java", "C", "C++",)
+```
+
+## 지역변수, 전역변수
+
+- **전역변수로 선언된 변수를 함수내에서 사용하고자 할 때는 global 키워드가 필요** 합니다.
+
+<aside>
+👉
+
+파이썬의 스코프와 자바나 C언어의 블록 스코프는 작동 방식에 차이가 있습니다. 파이썬은 **함수 단위의 스코프**를 갖는 반면, 자바나 C언어는 **블록 단위로 변수를 스코프**에 제한 합니다.
+
+</aside>
+
+```python
+# 태양고 학생들이 시합을 나갑니다. 총 준비된 칼은 10자루 입니다.
+# 시합을 참여 하는 학생 수를 입력 하여 남아 있는 칼이 얼마인지를 전역 변수와 지역 변수를 이용해 구현 합니다.
+knife = 10
+def game(player):
+    global knife
+    knife = knife - player
+    print(f"남아 있는 칼은 {knife} 자루 입니다.")
+
+def game2(player, knife):
+    knife = knife - player
+    print(f"남아 있는 칼은 {knife} 자루 입니다.")
+
+player = int(input("경기에 참여하는 선수가 몇명 입니까? "))
+# game(player)
+game2(player, knife)
+```
+
+## 키를입력 받아표준 체중 구하기
+
+- 키는 CM 단위로 입력 받습니다.
+- 체중에 대한 출력은 소수점 2자리까지 출력 합니다.(반올림 함수에 대해 사용)
+
+```python
+def std_weight(height, gender):
+    hm = height / 100
+    if gender == "남성":
+        return hm * hm * 22
+    else:
+        return hm * hm * 21
+
+height = int(input("키를 입력 : "))
+gender = input("성별 입력 남성 / 여성 : ")
+weight = round(std_weight(height, gender), 2)
+print(f"키 : {height}cm {gender}의 표준 체중은 {weight}kg 입니다.")
+```
+
+## 아이패드 구입 하기
+
+- 현재 시간 및 날짜 가져오는 내장 함수 사용
+- 전역 변수 사용
+- 시리얼넘버란? 제품의 고유번호이며 유일한 값
+- `enumerate(iterable, start=0)` : iterable(반복가능한 객체), start(인덱스의 시작값, 기본값은 0)
+
+- `if sel in map(str, range(1, len(options) + 1)):` `sel`이 유효한 값인지 확인하는 조건문
+
+```python
+from datetime import datetime  # 날짜와 시간을 사용하기 위해서
+import time  # 시간 관련 기능을 사용하기 위해 import
+
+make_cnt = 0  # 전역변수, 생산 대수를 구하기 위해서
+
+# 공통 선택 함수
+def select_option(prompt, options):
+    while True:
+        print(prompt)
+        for idx, option in enumerate(options, start=1):
+            print(f"[{idx}] {option}")
+        sel = input("선택하세요: ")
+        if sel in map(str, range(1, len(options) + 1)):
+            return sel
+
+def choice_pad():
+    return select_option("<< iPad Pro 구입하기 >>", ("구입하기", "종료하기"))
+
+def select_screen():
+    return select_option("디스플레이를 선택 하세요:", ("11인치", "13인치"))
+
+def select_color():
+    return select_option("컬러를 선택 하세요:", ("스페이스그레이", "실버"))
+
+def select_memory():
+    return select_option("용량을 선택 하세요:", ("128GB", "256GB", "512GB", "1TB"))
+
+def select_network():
+    return select_option("네트워크를 선택 하세요:", ("Wi-Fi", "Wi-Fi+Cellular"))
+
+def select_name_service():
+    sel = select_option("각인 서비스를 선택 하세요:", ("각인 서비스 신청", "신청 안함"))
+    if sel == "1":
+        return input("이름을 입력하세요: ")
+    return "NONE"
+
+def make_ipad(screen, color, memory, network, name):
+    global make_cnt
+    make_cnt += 1
+
+    # 선택된 옵션에 따른 출력 (튜플 사용)
+    screen_options = ("", "11인치", "12.9인치")
+    color_options = ("", "스페이스그레이", "실버")
+    memory_options = ("", "128GB", "256GB", "512GB", "1TB")
+    network_options = ("", "Wi-Fi", "Wi-Fi+Cellular")
+
+    # 시리얼 넘버 생성
+    serial_screen = "11" if screen == "1" else "13"
+    serial_network = "W" if network == "1" else "C"
+    serial_date = datetime.today().strftime("%Y%m%d")
+    serial_number = f"iPad{serial_screen}{serial_network}{serial_date}{make_cnt}"
+
+    # iPad 제작 진행 표시 (30초 동안 진행률 표시)
+    print("\n아이패드 제작중...")
+
+    for i in range(1, 31):
+        print(f"\r제작중... [{i * 100 // 30}%]", end='')  # 진행률 표시
+        time.sleep(1)  # 1초 대기
+
+    print("\n\niPad Pro가 출고 되었습니다.")
+    print("=" * 34)
+    print(f"화면 크기 : {screen_options[int(screen)]}")
+    print(f"제품 색상 : {color_options[int(color)]}")
+    print(f"제품 용량 : {memory_options[int(memory)]}")
+    print(f"네트워크 : {network_options[int(network)]}")
+    print(f"이름 : {name}")
+    print(f"시리얼 넘버 : {serial_number}")
+    print("-" * 34)
+
+# 프로그램 실행
+while True:
+    if choice_pad() == "2":
+        print("iPad Pro 구입을 종료합니다.")
+        break
+
+    screen = select_screen()
+    color = select_color()
+    memory = select_memory()
+    network = select_network()
+    name = select_name_service()
+    make_ipad(screen, color, memory, network, name)
+
+```
+
+- 아이패드 만들기 객체지향 코드로 변경하기
+    
+    ```python
+    from datetime import datetime
+    import time
+    
+    class iPad:
+        make_cnt = 0  # 생산 대수를 클래스 변수로 관리
+    
+        def __init__(self, screen, color, memory, network, name):
+            self.screen = screen
+            self.color = color
+            self.memory = memory
+            self.network = network
+            self.name = name
+            self.serial_number = self.generate_serial_number()
+    
+        def generate_serial_number(self):
+            iPad.make_cnt += 1
+            serial_screen = "11" if self.screen == "1" else "13"
+            serial_network = "W" if self.network == "1" else "C"
+            serial_date = datetime.today().strftime("%Y%m%d")
+            return f"iPad{serial_screen}{serial_network}{serial_date}{iPad.make_cnt}"
+    
+        def manufacture(self):
+            print("\n아이패드 제작중...")
+            for i in range(1, 31):
+                print(f"\r제작중... [{i * 100 // 30}%]", end='')
+                time.sleep(1)
+    
+            self.display_details()
+    
+        def display_details(self):
+            screen_options = ("", "11인치", "12.9인치")
+            color_options = ("", "스페이스그레이", "실버")
+            memory_options = ("", "128GB", "256GB", "512GB", "1TB")
+            network_options = ("", "Wi-Fi", "Wi-Fi+Cellular")
+    
+            print("\n\niPad Pro가 출고 되었습니다.")
+            print("=" * 34)
+            print(f"화면 크기 : {screen_options[int(self.screen)]}")
+            print(f"제품 색상 : {color_options[int(self.color)]}")
+            print(f"제품 용량 : {memory_options[int(self.memory)]}")
+            print(f"네트워크 : {network_options[int(self.network)]}")
+            print(f"이름 : {self.name}")
+            print(f"시리얼 넘버 : {self.serial_number}")
+            print("-" * 34)
+    
+    # 공통 선택 함수
+    def select_option(prompt, options):
+        while True:
+            print(prompt)
+            for idx, option in enumerate(options, start=1):
+                print(f"[{idx}] {option}")
+            sel = input("선택하세요: ")
+            if sel in map(str, range(1, len(options) + 1)):
+                return sel
+    
+    def choice_pad():
+        return select_option("<< iPad Pro 구입하기 >>", ("구입하기", "종료하기"))
+    
+    def select_screen():
+        return select_option("디스플레이를 선택 하세요:", ("11인치", "12.9인치"))
+    
+    def select_color():
+        return select_option("컬러를 선택 하세요:", ("스페이스그레이", "실버"))
+    
+    def select_memory():
+        return select_option("용량을 선택 하세요:", ("128GB", "256GB", "512GB", "1TB"))
+    
+    def select_network():
+        return select_option("네트워크를 선택 하세요:", ("Wi-Fi", "Wi-Fi+Cellular"))
+    
+    def select_name_service():
+        sel = select_option("각인 서비스를 선택 하세요:", ("각인 서비스 신청", "신청 안함"))
+        if sel == "1":
+            return input("이름을 입력하세요: ")
+        return "NONE"
+    
+    # 프로그램 실행
+    while True:
+        if choice_pad() == "2":
+            print("iPad Pro 구입을 종료합니다.")
+            break
+    
+        screen = select_screen()
+        color = select_color()
+        memory = select_memory()
+        network = select_network()
+        name = select_name_service()
+    
+        ipad = iPad(screen, color, memory, network, name)
+        ipad.manufacture()
+    
+    ```
+    
+
+## 재귀 함수
+
+- 재귀함수란? 함수내에서 자기 자신을 호출하는 구조 입니다.
+- 알고리즘 구현 시 많이 사용 됩니다. (정렬, 검색 등)
+- 1 ~ n까지의 합을 구하는 여러가지 방법 (for, 등차수열, 재귀)
+
+```c
+def for_sum(a):
+    sum = 0
+    for i in range(1, a + 1):
+        sum += i
+    return sum
+
+def while_sum(n):
+    sum = 0
+    while n:
+        sum += n
+        n -= 1
+    return sum
+
+def while2_sum(n):
+    sum = 0
+    while True:
+        sum += n
+        n -= 1
+        if n == 0: break
+    return sum
+
+# 등차 수열
+def gaus_sum(a):
+    return int(a * (a+1) / 2)
+
+# 재귀 호출
+def recu_sum(a):
+    if a == 1: return 1
+    return a + recu_sum(a-1)
+
+a = int(input("정수를 입력 하세요 : "))
+print(while_sum(a))
+```
+
+## 튜플과 함수
+
+튜플은 함수의 리턴에 많이 사용 됩니다. 다른 언어에서는 리턴으로 값을 되돌려 줄 때 한개의 값만 전달 할 수 있지만 파이썬에서는 여러개의 값으로 튜플을 이용하여 전달 가능 합니다. (패킹과 언패킹)
+
+이전에 배웠던 내장함수인 divmod 함수의 경우가 2개의 리턴값을 가지는 경우 입니다.
+
+```c
+def swap_func(a, b):
+    tmp = a
+    a = b
+    b = tmp
+    return (a, b)
+
+a, b = swap_func(10, 20))
+```
+
+***위의 예제는 일반적으로 다른 언어에서 값을 서로 교환하는 경우 사용되는 문법이며, 파이썬은  a, b = b, a로 가능 합니다.***
+
+```cpp
+def func_square(x, y):
+    return x * x, y * y
+
+x, y = map(int, input().split())
+print(func_square(x,y))
+```
+
+## 람다
+
+람다란? 간단한 함수의 선언과 호출을 하나의 식으로 간략히 표현 한 것
+
+파이썬에서는 람다함수를 통해 이름이 없는 함수를 만들 수 있음
+
+람다함수의 장점은 코드의 간결함, 메모리의 절약이라고 생각할 수 있음
+
+![스크린샷 2022-03-09 오후 5.18.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4c795fc-57bb-44ac-b810-15d436b1c8d0/스크린샷_2022-03-09_오후_5.18.36.png)
+
+**함수와 람다 비교**
+
+```jsx
+def add(a, b):
+    return a + b  
+
+print(add(1, 2))
+
+print((lambda a, b: a+b)(1, 2))
+```
+
+**함수의 매개변수로 함수 전달 하기** 
+
+```c
+def call_times(func):
+    for i in range(10):
+        func()
+
+def print_hello():
+    print("Hello^^")
+
+call_times(print_hello)
+```
+
+**filter()함수와 map()함수**
+
+함수를 매개 변수로 전달하는 대표적인 표준 함수로 map(), filter() 함수가 있습니다.
+
+**`map(함수, 리스트)` :** 리스트의 요소를 함수에 넣고 새로운 리스트를 구성 해주는 함수
+
+**`filter(함수, 리스트)` :** 리스트의 요소를 함수에 넣고 리턴값이 True인 것으로 새로운 리스트를 구성 해주는 함수
+
+```c
+def power(n):
+    return n * n
+
+square = lambda x: x * x  # 함수의 형태이지만 이름이 없다
+
+input = [1,2,3,4,5]
+
+output_a = list(map(square, input)) # 람다 함수를 직접 넣어도 됨
+print(output_a)
+```
+
+```c
+# 리스트에 람다 합수를 넣는 것도 가능 합니다.
+my_list = [lambda a, b : a * b, lambda a, b: a + b]
+print(my_list[0](5,2))
+print(my_list[1](5,2))
+```
+
+```python
+# 함수로 만들어서 map이나 filter의 인자로 넣는 방법
+def odd(n) :
+    return  n % 2 == 1
+def even(n) :
+    return  n % 2 == 0
+
+# 람다를 변수로 받아 map이나 filter의 인자로 넣는 방법
+lambda_add = lambda x: x % 2 == 1
+lambda_even = lambda x: x % 2 == 0
+
+print("입력 :", end=" ")
+number = list(map(int, input().split())) # 여러개의 데이터를 입력 받아서 리스트 구성
+odd = list(filter(lambda x: x % 2 == 1, number))
+even = list(filter(lambda x: x % 2 == 0, number))
+
+print(f"홀수 : {odd}")
+print(f"짝수 : {even}")
+```
+
+- 참고 : a,b,c = input(”문자열 세개 입력 : “).split()
+
+## 클로저와 데코레이터
+
+데코레이터를 이해하려면 먼저 클로저를 알아야 하며, **코드의 재사용성, 모듈화, 간결성, 기능 추가 및 수정의 용이성 등 여러가지 이점**이 있습니다.
+
+### 클로저
+
+클로저는 간단히 말해 함수 안에 내부 함수(inner function)를 구현 하고 그 내부 함수를 반환하는 함수를 말합니다.  이 때 외부 함수는 자신이 가진 변수값 등을 내부 함수에 전달하여 실행되도록 합니다.  (콜백 함수 등에 사용 됩니다.)
+
+<aside>
+💡 객체지향언어에서 생성된 객체 내부의 메소드가 필드를 참조하는 것과 유사한 개념
+
+</aside>
+
+```jsx
+def calc() :
+    a = 3
+    b = 5
+    def mul_add(x):
+        return a * x + b
+    return mul_add
+
+c = calc()
+print(c(1), c(2), c(3), c(4), c(5))
+```
+
+- 콜백 기능 구현
+
+```python
+import time
+
+def perform_operation(x, y, callback):
+    result = 0
+    for e in range(x) :
+        result += e + x + y
+        time.sleep(1)
+    callback(result)  # 콜백 함수 호출
+
+# 콜백 함수 정의
+def callback_function(result):
+    print(f"Operation result is: {result}")
+
+# perform_operation 함수를 호출하면서 콜백 함수를 전달
+perform_operation(10, 20, callback_function)
+```
+
+### 데코레이터
+
+- 이미 만들어져 있는 함수의 앞과 뒤에 기능을 추가 할 때 사용 됩니다.
+- 호출 방법은 2가지 방법이 있습니다.
+
+```python
+import datetime
+
+def datetime_deco(func):
+    def decorated():
+        print(datetime.datetime.now())
+        func()
+        print(datetime.datetime.now())
+    return decorated
+
+@datetime_deco
+def for_sum():
+    sum = 0
+    for i in range(1, 100):
+        sum += i
+    print(sum)
+
+# 첫번째 방법
+# test = datetime_deco(for_sum)
+# test()
+
+# 두번째 방법
+for_sum()
+```
+
+## 함수 예제(영화 예매)
+
+- 사용자로부터 좌석번호(index)를 입력받아 예매하는 시스템이다.
+- 예매가 완료되면 해당 좌석 값을 1로 변경한다.
+- 이미 예매가 완료된 좌석은 재구매할 수 없다.
+- 한 좌석당 예매 가격은 12000원이다.
+- 프로그램 종료 후, 해당 영화관의 총 매출액을 출력한다.
+- 코드보기
+    
+    ```python
+    # 영화표 예매하기
+    # 사용자로 부터 좌석번호를 입력 받아 예매하는 시스템
+    # 예매가 완료되면 해당 좌석을 1로 변경
+    # 이미 예매가 완료된 좌석은 판매 불가
+    # 좌석당 예매 가격은 전역 변수 정의
+    # 프로그램을 종료하면 총 매출액을 계산
+    seat = [0] * 10  # 0으로 초기화된 리스트 10개 생성
+    PRICE = 12000
+    
+    def print_seat():
+        for e in seat:
+            if e == 0:
+                print("[ ]", end=" ")
+            else:
+                print("[V]", end=" ")
+        print()
+    
+    def select_seat():
+        print_seat()
+        seat_num = int(input("좌석번호 입력 : ")) - 1  # 0번 인덱스 부터 시작하기 때문에
+        if seat[seat_num] == 0: # 아직 예약 안된 좌석
+            seat[seat_num] = 1
+            print_seat()  # 예약 성공 시 결과 보여주기
+        else:
+            print("이미 예약된 좌석 입니다.")
+    
+    def total_account():
+        cnt = 0   # 판매된 좌석 개수를 누적
+        for e in seat:
+            if e == 1:
+                cnt += 1
+        return PRICE * cnt   # 티켓 가격 * 판매 좌석 수
+    
+    while True:
+        print("[1]예매하기")
+        print("[2]종료하기")
+        sel = int(input("메뉴 선택 : "))
+        if sel == 1:
+            select_seat()
+        else:
+            print(f"총 매출액 : {total_account()}")
+            break
+    
+    ```
+    
+
+## 테스트 문제 (직접 풀어 보세요.)
+
+### 함수로 입력 받은 수가 짝수 인지 홀수 인지 결과 출력
+
+- 코드 보기
+    
+    ```c
+    def check_even_odd(n) :
+        if n % 2 == 0 :
+            print("짝수 입니다.")
+        else:
+            print("홀수 입니다.")
+    
+    n = int(input("정수 입력 : "))
+    check_even_odd(n)
+    ```
+    
+
+### 입력으로 들어오는 수의 평균을 구해서 반환 후 출력 하기
+
+- 코드 보기
+    
+    ```python
+    def aver_func(input):
+        return sum(input) / len(input)
+    
+    input = list(map(int, input("정수 입력 : ").split()))
+    print(aver_func(input))
+    ```
+    
+
+### 소수의 합구하기
+
+- 결과 예)  12이면 2+3+5+7+11 = 28
+- 코드 보기
+    
+    ```c
+    def prime_func(n):
+        is_prime = True
+        for i in range(2, n):
+            if n % i == 0 : is_prime = False
+        if is_prime : return n
+        else: return 0 
+    
+    n = int(input("정수 입력 : "))
+    sum = 0
+    for i in range(2, n) :
+        sum += prime_func(i)
+    print(sum)
+    ```
+    
+
+### 두번째 수 찾기
+
+- 찾는 2번째 수가 없으면 -1 반환
+- 코드 보기
+    
+    ```python
+    def second_num(ls, n):
+        cnt = 0
+        for i in range(len(ls)):
+            if ls[i] == n:
+                if cnt > 0 : return i+1
+                else: cnt += 1
+        return -1
+    
+    ls = list(map(int, input("리스트 입력 : ").split()))
+    n = int(input("찾는 숫자 : "))
+    print(second_num(ls, n))
+    ```
+    
+
+### 세자리수 정수 입력 받아 가장 큰수 출력하기
+
+- 코드 보기
+    
+    ```python
+    a = b = c = 0
+    def num_split(input):  
+        global a, b, c 
+        a = input // 100
+        b = (input % 100) // 10
+        c = (input % 100) % 10
+    
+    def compare_num():
+        if a > b:
+            if a < c: return a
+            else: return c
+        else:
+            if b > c: return b
+            else: return c
+    
+    n = int(input())
+    num_split(n)
+    print(compare_num())
+    ```
