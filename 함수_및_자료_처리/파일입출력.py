@@ -45,9 +45,14 @@ score_file.close()
 # pickle : 파이썬 객체를 직렬화 / 역직렬화 하기 위한 모듈
 # 대체제 : json, xml
 
+import pickle
+# data = {"name" : "안유진", "age" : 21, "addr" : "서울시 강남구 역삼동"}
+# with open("data.pickle","wb") as file:
+#     pickle.dump(data, file)  # 해당 객체를 파일에 직렬화해서 쓰기
 
-
-
+with open("data.pickle","rb") as file:
+    rst = pickle.load(file)
+    print(rst)
 
 
 

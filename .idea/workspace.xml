@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 5 교시">
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/28_블랙잭.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/Class_예제.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/class.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/영화표예매.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/함수실습문제.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/파일입출력.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 7 교시">
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/스타벅스_판매량.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/스타벅스일일매출.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 문제/27_영화표_예매하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/27_영화표_예매하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/파일입출력.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/파일입출력.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +98,7 @@
     "Python.비밀번호만들기.executor": "Run",
     "Python.상근날드.executor": "Run",
     "Python.상근이알람.executor": "Run",
+    "Python.스타벅스_판매량.executor": "Run",
     "Python.아르바이트급여계산.executor": "Run",
     "Python.아이패드_구입하기.executor": "Run",
     "Python.연산자 예제.executor": "Run",
@@ -304,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726725006416</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="240919 수업 7 교시">
+      <option name="closed" value="true" />
+      <created>1726732894251</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1726732894251</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -320,7 +325,8 @@
     <MESSAGE value="240919 수업 3 교시" />
     <MESSAGE value="240919 수업 4 교시" />
     <MESSAGE value="240919 수업 5 교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240919 수업 5 교시" />
+    <MESSAGE value="240919 수업 7 교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240919 수업 7 교시" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
