@@ -117,3 +117,24 @@ game2(knife,in_val)
 # 체중에 대한 출력은 소수점 2자리까지 출력 ( 반올림 함수 사용)
 def std_weight(height, gender):
     hm = height / 100 # 입력 받은 cm 키를 m 단위로 바꿈
+    if gender == "남성":
+        return hm * hm * 22
+    elif gender == "여성":
+        return hm * hm * 21
+    else:
+        print("잘못된 입력 입니다.")
+
+height = int(input("키 입력 : "))
+gender = input("성별 남성[1] / 여성[2] :")
+if gender == "1":
+    gender = "남성"
+elif gender == "2":
+    gender = "여성"
+
+weight = round(std_weight(height, gender), 2)   # 소수점 3번째 자리를 반올림해서 소수점 3자리로 만듦
+print(f"키 {height}cm {gender}의 평균 체중은 {weight}kg 입니다.")
+
+
+
+
+
