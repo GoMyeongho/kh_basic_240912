@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 7 교시">
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/스타벅스_판매량.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/스타벅스일일매출.txt" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 8 교시">
+      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/함수실습문제2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/파일입출력.py" beforeDir="false" afterPath="$PROJECT_DIR$/함수_및_자료_처리/파일입출력.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/Class_예제.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/class.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +117,7 @@
     "Python.튜플.executor": "Run",
     "Python.파일입출력.executor": "Run",
     "Python.함수기본.executor": "Run",
+    "Python.함수실습문제2.executor": "Run",
     "Python.핸드폰요금.executor": "Run",
     "Python.행사안내메일자동 작성하기.executor": "Run",
     "Python.홀짝나누어담기.executor": "Run",
@@ -129,11 +130,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\python\kh_basic\파이썬_고급\응용문제" />
       <recent name="D:\dev\python\kh_basic\함수_및_자료_처리\응용문제" />
       <recent name="D:\dev\python\kh_basic\개발_환경_구성_및_기본_문법\수업중_응용문제" />
       <recent name="D:\dev\python\kh_basic\개발_환경_구성_및_기본_문법" />
       <recent name="D:\dev\python\kh_basic\알고리즘 문제\수업중" />
-      <recent name="D:\dev\python\kh_basic\알고리즘 문제" />
     </key>
   </component>
   <component name="RunManager">
@@ -150,7 +151,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/함수_및_자료_처리/응용문제/Class_예제.py" />
+      <option name="SCRIPT_NAME" value="D:\dev\python\kh_basic\파이썬_고급\응용문제\Class_예제.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,7 +310,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726732894251</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="240919 수업 8 교시">
+      <option name="closed" value="true" />
+      <created>1726734271444</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1726734271444</updated>
+    </task>
+    <task id="LOCAL-00018" summary="240919 수업 8 교시">
+      <option name="closed" value="true" />
+      <created>1726734290081</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1726734290081</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -326,14 +343,15 @@
     <MESSAGE value="240919 수업 4 교시" />
     <MESSAGE value="240919 수업 5 교시" />
     <MESSAGE value="240919 수업 7 교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240919 수업 7 교시" />
+    <MESSAGE value="240919 수업 8 교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240919 수업 8 교시" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/함수_및_자료_처리/응용문제/Class_예제.py</url>
-          <line>48</line>
+          <url>file://$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py</url>
+          <line>46</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
