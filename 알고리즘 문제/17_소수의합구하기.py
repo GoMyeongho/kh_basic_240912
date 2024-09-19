@@ -1,16 +1,16 @@
 n = int(input())
 prime_n = [2]
-sum = 2
+prime_sum = 2
 for i in range(3,n):
     prime = True
     for e in prime_n:
         if i % e == 0:
             prime = False
     if prime:
-        sum += i
+        prime_sum += i
         prime_n.append(i)
 
-print(sum)
+print(prime_sum)
 
 
 
