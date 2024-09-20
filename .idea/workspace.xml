@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 8 교시">
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/TV만들기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/객채와_클래스.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240920 수업 1~2 교시">
+      <change afterPath="$PROJECT_DIR$/파이썬_고급/연산자_오버로딩.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/파이썬_고급/정적메서드.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 문제/28_블랙잭.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/28_블랙잭.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/파이썬_고급/TV상속_오버라이딩.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/TV상속_오버라이딩.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +73,7 @@
     "Python.25_최대공약수와_최소공배수.executor": "Run",
     "Python.26_PC방알바.executor": "Run",
     "Python.27_영화표_예매하기.executor": "Run",
+    "Python.28_블랙잭.executor": "Run",
     "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
@@ -80,6 +83,7 @@
     "Python.9_홀짝게임.executor": "Run",
     "Python.Class_예제.executor": "Run",
     "Python.TV만들기.executor": "Run",
+    "Python.TV상속_오버라이딩.executor": "Run",
     "Python.build_in_fns.executor": "Run",
     "Python.class.executor": "Run",
     "Python.datetime_fns.executor": "Run",
@@ -103,6 +107,7 @@
     "Python.아르바이트급여계산.executor": "Run",
     "Python.아이패드_구입하기.executor": "Run",
     "Python.연산자 예제.executor": "Run",
+    "Python.연산자_오버로딩.executor": "Run",
     "Python.연산자예제.executor": "Run",
     "Python.영화표예매.executor": "Run",
     "Python.윤년계산하기.executor": "Run",
@@ -170,7 +175,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
       </set>
     </attachedChunks>
   </component>
@@ -335,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726735592215</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="240920 수업 1~2 교시">
+      <option name="closed" value="true" />
+      <created>1726797060911</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1726797060911</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -353,14 +366,15 @@
     <MESSAGE value="240919 수업 5 교시" />
     <MESSAGE value="240919 수업 7 교시" />
     <MESSAGE value="240919 수업 8 교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240919 수업 8 교시" />
+    <MESSAGE value="240920 수업 1~2 교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240920 수업 1~2 교시" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py</url>
-          <line>44</line>
+          <line>47</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

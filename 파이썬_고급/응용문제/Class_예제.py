@@ -1,23 +1,5 @@
 from decimal import Decimal
-import json
 
-from dask.order import order
-
-filename = "../order.json"
-# 파일에서 메뉴를 읽어 오는 함수
-def load_menu():
-    try:
-        with open(filename, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print("해당 파일이 없습니다")
-    except json.JSONDecodeError:
-        print("JSON 디코딩 실패")
-
-# 파일을 저장하는 함수
-def save_menu():
-    with open(filename, "w" , encoding="utf-8") as file:
-        json.dump(new_order.products, file, ensure_ascii=False, indent=4)
 
 
 class Product:
@@ -54,7 +36,8 @@ class Order:
     def remove_item(self, name: str):
         for e in self.products:
             if name == e.get_name():
-                self.total -= int(e.get_price)
+                rm_price = e.get_price()
+                self.total -= Decimal(rm_price)
                 self.products.remove(e)
                 return True
         return False
@@ -75,8 +58,9 @@ if __name__ == "__main__":
 
     # 최종 가격 출력
     print(f"최종 가격 (세금 포함): {final_price}")  # 예상 출력: 4.47
+
 new_order = Order()
-new_order.products = load_menu()
+
 
 while True:
     sel = int(input("""
@@ -102,9 +86,6 @@ while True:
     elif sel == 3:
         for e in new_order.products:
             print(f"{e.get_name():10} | {e.get_price():8}$")
-        while True:
-            keep_going = int(input("[1]메뉴로 돌아가기"))
-            if keep_going == 1: break
 
 
     elif sel == 4:
@@ -115,5 +96,7 @@ while True:
     elif sel == 5:
         final_price = new_order.calculate_final_price(Decimal(0.06))
         print(f"최종 가격 (세금 포함): {final_price}")
+    while True:
+        keep_going = int(input("[1]메뉴로 돌아가기"))
+        if keep_going == 1: break
 
-save_menu()

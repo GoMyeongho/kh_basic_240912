@@ -23,24 +23,24 @@ class PrototypeTV:
     def set_on(self, is_on):
         self.is_on = is_on
 
-    def set_channel(self, channel):
+    def set_channel(self, cnl):
         if 1 <= cnl <= 1000:
-            self.channel = channel
+            self.channel = cnl
             print(f"채널을 {self.channel}로 변경 하였습니다")
+        else:
+            print("체널 설정 범위가 아닙니다.")
 
-    def set_volume(self, volume):
-        self.volume = volume
-
-    def tv_info(self):
-        power = ("OFF", "ON")
-        print(f"이름 : {self.name}")
-        print(f"전원 : {power[self.is_on]}")
-        print(f"체널 : {self.channel}")
-        print(f"볼륨 : {self.volume}")
-
-
+class ProductTv(PrototypeTV):
+    def set_channel(self, cnl):
+        if 1 <= cnl <= 2000:
+            self.channel = cnl
+            print(f"채널을 {self.channel}로 변경 하였습니다")
+        else:
+            print("체널 설정 범위가 아닙니다.")
 
 
+lg_tv = ProductTv(False,20, 20)
+lg_tv.set_channel(1500)
 
 
 
