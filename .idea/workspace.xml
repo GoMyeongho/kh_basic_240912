@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240919 수업 8 교시">
-      <change afterPath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/함수실습문제2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/파이썬_고급/TV만들기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/파이썬_고급/객채와_클래스.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/Class_예제.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/함수_및_자료_처리/응용문제/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +79,7 @@
     "Python.8_7개의_숫자를_입력받아_짝수_홀수_나누어_출력.executor": "Run",
     "Python.9_홀짝게임.executor": "Run",
     "Python.Class_예제.executor": "Run",
+    "Python.TV만들기.executor": "Run",
     "Python.build_in_fns.executor": "Run",
     "Python.class.executor": "Run",
     "Python.datetime_fns.executor": "Run",
@@ -326,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726734290081</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="240919 수업 8 교시">
+      <option name="closed" value="true" />
+      <created>1726735592215</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726735592215</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,8 +360,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="8" />
+          <line>44</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

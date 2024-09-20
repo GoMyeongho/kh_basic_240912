@@ -1,10 +1,29 @@
-import decimal
+from decimal import Decimal
+import json
+
+from dask.order import order
+
+filename = "../order.json"
+# 파일에서 메뉴를 읽어 오는 함수
+def load_menu():
+    try:
+        with open(filename, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("해당 파일이 없습니다")
+    except json.JSONDecodeError:
+        print("JSON 디코딩 실패")
+
+# 파일을 저장하는 함수
+def save_menu():
+    with open(filename, "w" , encoding="utf-8") as file:
+        json.dump(new_order.products, file, ensure_ascii=False, indent=4)
 
 
 class Product:
     def __init__(self, name, price):
         self.name = name
-        self.price = decimal.Decimal(price)
+        self.price = Decimal(price)
 
     def get_name(self):
         return self.name
@@ -19,31 +38,30 @@ class Order:
         self.products = products
         self.total = total
 
-    def add_item(self,product: Product):
+    def add_item(self, product: Product):
         self.products.append(product)
         self.total += product.price
 
-    def calculate_final_price(self,tax_rate: decimal.Decimal):
+    def calculate_final_price(self,tax_rate: Decimal):
         return round(((1+tax_rate) * self.total),2)
 
     def get_item(self,name: str):
-        if name in self.products.name:
-            return name
-        else:
+        for e in self.products:
+            if name == e.get_name():
+                return e
             return None
 
     def remove_item(self, name: str):
-        count = False
-        if name in self.products:
-            self.total -= self.products.price
-            self.products.remove(name)
-            count = True
-        return count
+        for e in self.products:
+            if name == e.get_name():
+                self.total -= int(e.get_price)
+                self.products.remove(e)
+                return True
+        return False
 
 
 
-
-
+# test
 if __name__ == "__main__":
     # Order 객체 생성
     my_order = Order()
@@ -53,10 +71,49 @@ if __name__ == "__main__":
     my_order.add_item(Product("Bananas", "1.06"))
 
     # 최종 가격 계산 (판매세 6% 적용)
-    final_price = my_order.calculate_final_price(decimal.Decimal(0.06))
+    final_price = my_order.calculate_final_price(Decimal(0.06))
 
     # 최종 가격 출력
     print(f"최종 가격 (세금 포함): {final_price}")  # 예상 출력: 4.47
+new_order = Order()
+new_order.products = load_menu()
+
+while True:
+    sel = int(input("""
+===========================================
+             주문 관리 시스템             
+=========================================== 
+
+ [1] 제품 추가           [2] 제품 제거
+ [3] 제품 목록 보기      [4] 제품 상세 보기
+ [5] 최종 가격 계산      [6] 프로그램 종료
+"""))
+    if sel == 6: break
+
+    if sel == 1:
+        product_name = input("제품 명을 입력 하시오 : ")
+        product_price = input("제품의 가격을 입력 하시오 : ")
+        new_order.add_item(Product(product_name, product_price))
+
+    elif sel == 2:
+        product_name = input("제거할 제품 명을 입력 하시오 : ")
+        new_order.remove_item(product_name)
+
+    elif sel == 3:
+        for e in new_order.products:
+            print(f"{e.get_name():10} | {e.get_price():8}$")
+        while True:
+            keep_going = int(input("[1]메뉴로 돌아가기"))
+            if keep_going == 1: break
 
 
+    elif sel == 4:
+        product_name = input("확인할 제품 명을 입력 하시오 : ")
+        sel_product = new_order.get_item(product_name)
+        print(f"{sel_product.get_name:10} | {sel_product.get_price:8}$")
 
+    elif sel == 5:
+        final_price = new_order.calculate_final_price(Decimal(0.06))
+        print(f"최종 가격 (세금 포함): {final_price}")
+
+save_menu()
