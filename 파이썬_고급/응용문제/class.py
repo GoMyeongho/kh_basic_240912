@@ -57,8 +57,8 @@ class Bus(Car):
 
 def hour_min_list(time):
     hour = round (time // 1)
-    min = round((time - time // 1 ) * 60)
-    return [hour,min]
+    minute = round((time - time // 1 ) * 60)
+    return [hour,minute]
 
 count = 0
 while True:
