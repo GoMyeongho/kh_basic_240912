@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240923 수업 1 교시">
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/32_KMP의이유.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/33_암호.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/모듈과_패키지.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/모듈테스트.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/예외처리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/외부모듈.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/저항.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/플라스크.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240923 수업 2~4 교시">
+      <change afterPath="$PROJECT_DIR$/알고리즘 문제/34_소수단어.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 문제/16_저항.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/16_저항.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/파이썬_고급/응용문제/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 문제/33_암호.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/33_암호.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +76,8 @@
     "Python.30_단어공부.executor": "Run",
     "Python.31_전자레인지.executor": "Run",
     "Python.32_KMP의이유.executor": "Run",
+    "Python.33_암호.executor": "Run",
+    "Python.34_소수단어.executor": "Run",
     "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
     "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
     "Python.6_n개의_숫자를_입력받아_최대_최소_구하기.executor": "Run",
@@ -398,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727052707333</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="240923 수업 2~4 교시">
+      <option name="closed" value="true" />
+      <created>1727063426055</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1727063426055</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,6 +434,7 @@
     <MESSAGE value="240920 수업 4 교시" />
     <MESSAGE value="240920 수업 8 교시" />
     <MESSAGE value="240923 수업 1 교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240923 수업 1 교시" />
+    <MESSAGE value="240923 수업 2~4 교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240923 수업 2~4 교시" />
   </component>
 </project>
