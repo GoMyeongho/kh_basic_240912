@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240920 수업 4 교시">
-      <change afterPath="$PROJECT_DIR$/알고리즘 문제/31_전자레인지.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/파이썬_고급/추상화.py" afterDir="false" />
+    <list default="true" id="fc7463e7-f1d0-41b6-97d8-a2c6bf3098f2" name="변경" comment="240920 수업 8 교시">
+      <change afterPath="$PROJECT_DIR$/파이썬_고급/스레드.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 문제/30_단어공부.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 문제/30_단어공부.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/Class_예제.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/파이썬_고급/응용문제/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬_고급/응용문제/class.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,93 +50,93 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.10_평균점수.executor": "Run",
-    "Python.11_배수찾기.executor": "Run",
-    "Python.12_숫자의합.executor": "Run",
-    "Python.13나머지.executor": "Run",
-    "Python.14_X보다작은수.executor": "Run",
-    "Python.15_평균은넘겠지.executor": "Run",
-    "Python.16_저항.executor": "Run",
-    "Python.17_소수의합구하기.executor": "Run",
-    "Python.18_손익분기점.executor": "Run",
-    "Python.19_수정렬하기.executor": "Run",
-    "Python.20_성적순.executor": "Run",
-    "Python.21_피타고라스의_법칙.executor": "Run",
-    "Python.22_피보나치수열.executor": "Run",
-    "Python.23_비례식.executor": "Run",
-    "Python.24_유클리드_호재법.executor": "Run",
-    "Python.25_최대공약수와_최소공배수.executor": "Run",
-    "Python.26_PC방알바.executor": "Run",
-    "Python.27_영화표_예매하기.executor": "Run",
-    "Python.28_블랙잭.executor": "Run",
-    "Python.29_8진수_2진수.executor": "Run",
-    "Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor": "Run",
-    "Python.30_단어공부.executor": "Run",
-    "Python.31_전자레인지.executor": "Run",
-    "Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor": "Run",
-    "Python.5_정수n을_입력받아n_x_n출력하기.executor": "Run",
-    "Python.6_n개의_숫자를_입력받아_최대_최소_구하기.executor": "Run",
-    "Python.7_중복값이_없는_로또번호_생성하기.executor": "Run",
-    "Python.8_7개의_숫자를_입력받아_짝수_홀수_나누어_출력.executor": "Run",
-    "Python.9_홀짝게임.executor": "Run",
-    "Python.Class_예제.executor": "Run",
-    "Python.TV만들기.executor": "Run",
-    "Python.TV상속_오버라이딩.executor": "Run",
-    "Python.build_in_fns.executor": "Run",
-    "Python.class.executor": "Run",
-    "Python.datetime_fns.executor": "Run",
-    "Python.ext_fns.executor": "Run",
-    "Python.ext_fns2.executor": "Run",
-    "Python.기본.executor": "Run",
-    "Python.딕셔너리.executor": "Run",
-    "Python.딕셔너리_커피메뉴.executor": "Run",
-    "Python.람다.executor": "Run",
-    "Python.리스트연습.executor": "Run",
-    "Python.문자열 실습문제.executor": "Run",
-    "Python.문자열 예제.executor": "Run",
-    "Python.문자의개수.executor": "Run",
-    "Python.반복문실습.executor": "Run",
-    "Python.반복문예제.executor": "Run",
-    "Python.별찍기.executor": "Run",
-    "Python.비밀번호만들기.executor": "Run",
-    "Python.상근날드.executor": "Run",
-    "Python.상근이알람.executor": "Run",
-    "Python.스타벅스_판매량.executor": "Run",
-    "Python.아르바이트급여계산.executor": "Run",
-    "Python.아이패드_구입하기.executor": "Run",
-    "Python.연산자 예제.executor": "Run",
-    "Python.연산자_오버로딩.executor": "Run",
-    "Python.연산자예제.executor": "Run",
-    "Python.영화표예매.executor": "Run",
-    "Python.윤년계산하기.executor": "Run",
-    "Python.입력받은_정수_수에_대한_합계_구하기.executor": "Run",
-    "Python.입력받은문자대소문자변환하기.executor": "Run",
-    "Python.입력예제.executor": "Run",
-    "Python.입출력.executor": "Run",
-    "Python.자료형 예제.executor": "Run",
-    "Python.재귀함수.executor": "Run",
-    "Python.접근제한자.executor": "Run",
-    "Python.정적메서드.executor": "Run",
-    "Python.조건문_응용.executor": "Run",
-    "Python.조건문예제.executor": "Run",
-    "Python.추상화.executor": "Run",
-    "Python.클로저와_데코레이터.executor": "Run",
-    "Python.튜플.executor": "Run",
-    "Python.파일입출력.executor": "Run",
-    "Python.함수기본.executor": "Run",
-    "Python.함수실습문제2.executor": "Run",
-    "Python.핸드폰요금.executor": "Run",
-    "Python.행사안내메일자동 작성하기.executor": "Run",
-    "Python.홀짝나누어담기.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/dev/python/kh_basic",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.10_평균점수.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11_배수찾기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12_숫자의합.executor&quot;: &quot;Run&quot;,
+    &quot;Python.13나머지.executor&quot;: &quot;Run&quot;,
+    &quot;Python.14_X보다작은수.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15_평균은넘겠지.executor&quot;: &quot;Run&quot;,
+    &quot;Python.16_저항.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_소수의합구하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.18_손익분기점.executor&quot;: &quot;Run&quot;,
+    &quot;Python.19_수정렬하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.20_성적순.executor&quot;: &quot;Run&quot;,
+    &quot;Python.21_피타고라스의_법칙.executor&quot;: &quot;Run&quot;,
+    &quot;Python.22_피보나치수열.executor&quot;: &quot;Run&quot;,
+    &quot;Python.23_비례식.executor&quot;: &quot;Run&quot;,
+    &quot;Python.24_유클리드_호재법.executor&quot;: &quot;Run&quot;,
+    &quot;Python.25_최대공약수와_최소공배수.executor&quot;: &quot;Run&quot;,
+    &quot;Python.26_PC방알바.executor&quot;: &quot;Run&quot;,
+    &quot;Python.27_영화표_예매하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.28_블랙잭.executor&quot;: &quot;Run&quot;,
+    &quot;Python.29_8진수_2진수.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_정해진_형식으로_시간을_입력_받아서_출력하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.30_단어공부.executor&quot;: &quot;Run&quot;,
+    &quot;Python.31_전자레인지.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_입력_받은_n개의_원소에_대한_평균_구하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_정수n을_입력받아n_x_n출력하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_n개의_숫자를_입력받아_최대_최소_구하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_중복값이_없는_로또번호_생성하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8_7개의_숫자를_입력받아_짝수_홀수_나누어_출력.executor&quot;: &quot;Run&quot;,
+    &quot;Python.9_홀짝게임.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Class_예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TV만들기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TV상속_오버라이딩.executor&quot;: &quot;Run&quot;,
+    &quot;Python.build_in_fns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.datetime_fns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ext_fns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ext_fns2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.기본.executor&quot;: &quot;Run&quot;,
+    &quot;Python.딕셔너리.executor&quot;: &quot;Run&quot;,
+    &quot;Python.딕셔너리_커피메뉴.executor&quot;: &quot;Run&quot;,
+    &quot;Python.람다.executor&quot;: &quot;Run&quot;,
+    &quot;Python.리스트연습.executor&quot;: &quot;Run&quot;,
+    &quot;Python.문자열 실습문제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.문자열 예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.문자의개수.executor&quot;: &quot;Run&quot;,
+    &quot;Python.반복문실습.executor&quot;: &quot;Run&quot;,
+    &quot;Python.반복문예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.별찍기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.비밀번호만들기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.상근날드.executor&quot;: &quot;Run&quot;,
+    &quot;Python.상근이알람.executor&quot;: &quot;Run&quot;,
+    &quot;Python.스타벅스_판매량.executor&quot;: &quot;Run&quot;,
+    &quot;Python.아르바이트급여계산.executor&quot;: &quot;Run&quot;,
+    &quot;Python.아이패드_구입하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.연산자 예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.연산자_오버로딩.executor&quot;: &quot;Run&quot;,
+    &quot;Python.연산자예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.영화표예매.executor&quot;: &quot;Run&quot;,
+    &quot;Python.윤년계산하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.입력받은_정수_수에_대한_합계_구하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.입력받은문자대소문자변환하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.입력예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.입출력.executor&quot;: &quot;Run&quot;,
+    &quot;Python.자료형 예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.재귀함수.executor&quot;: &quot;Run&quot;,
+    &quot;Python.접근제한자.executor&quot;: &quot;Run&quot;,
+    &quot;Python.정적메서드.executor&quot;: &quot;Run&quot;,
+    &quot;Python.조건문_응용.executor&quot;: &quot;Run&quot;,
+    &quot;Python.조건문예제.executor&quot;: &quot;Run&quot;,
+    &quot;Python.추상화.executor&quot;: &quot;Run&quot;,
+    &quot;Python.클로저와_데코레이터.executor&quot;: &quot;Run&quot;,
+    &quot;Python.튜플.executor&quot;: &quot;Run&quot;,
+    &quot;Python.파일입출력.executor&quot;: &quot;Run&quot;,
+    &quot;Python.함수기본.executor&quot;: &quot;Run&quot;,
+    &quot;Python.함수실습문제2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.핸드폰요금.executor&quot;: &quot;Run&quot;,
+    &quot;Python.행사안내메일자동 작성하기.executor&quot;: &quot;Run&quot;,
+    &quot;Python.홀짝나누어담기.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dev/python/kh_basic&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\python\kh_basic\파이썬_고급\응용문제" />
@@ -370,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726804174147</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="240920 수업 8 교시">
+      <option name="closed" value="true" />
+      <created>1726822242384</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1726822242384</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,6 +407,7 @@
     <MESSAGE value="240920 수업 1~2 교시" />
     <MESSAGE value="240920 수업 3 교시" />
     <MESSAGE value="240920 수업 4 교시" />
-    <option name="LAST_COMMIT_MESSAGE" value="240920 수업 4 교시" />
+    <MESSAGE value="240920 수업 8 교시" />
+    <option name="LAST_COMMIT_MESSAGE" value="240920 수업 8 교시" />
   </component>
 </project>
